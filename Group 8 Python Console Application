@@ -1,0 +1,40 @@
+# from pip._vendor import requests
+# from pprint import pprint as pp
+
+# endpoint1 = 'https://restcountries.com/v3.1/name/Nigeria?fullText=true' 
+
+
+# response = requests.get(endpoint1) #making a call to the api
+
+# print(response.status_code) #check to ensure the api call is successful
+
+# data = response.json()
+# pp(data)
+
+# # with open ('countrydetails.txt', 'w') as text_file:
+# #     for item in data['people']:
+# #         text_file.write(item['name'] + '\n')
+
+
+from pip._vendor import requests
+from pprint import pprint as pp
+
+# api_key = 'd6463bde9e2ea9ae97de9ad2'
+
+endpoint1 = 'https://v6.exchangerate-api.com/v6/d6463bde9e2ea9ae97de9ad2/latest/USD' 
+
+response = requests.get(endpoint1) #making a call to the api
+
+print(response.status_code) #check to ensure the api call is successful
+
+data = response.json()
+pp(data)
+
+
+
+
+
+# # with open ('countrydetails.txt', 'w') as text_file:
+# #     for item in data['people']:
+# #         text_file.write(item['name'] + '\n')
+
