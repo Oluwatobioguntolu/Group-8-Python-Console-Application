@@ -1,46 +1,44 @@
 #Project 1 
 # Global Holiday Planner
-#Brief Summary of the project: Project 1 help user get more information about their choice country.Poject 2 help user convert their budget to their choice country currency 
-#from pip._vendor import requests
-#from pprint import pprint as pp
-# Type in the country of your choice to get detailed information about the country
-#country = input("What country would you like to visit?: ")
-#endpoint1 = 'https://restcountries.com/v3.1/name/' + country + '?fullText=true' # the api link 
-#print(endpoint1)
-#response = requests.get(endpoint1)  # making a call to the api
-#print(response.status_code)  # check to ensure the api call is successful
-#data = response.json() #response in json file
-#pp(data)
-# display country information 'area', 'borders', 'capital' 'continents' 'currencies' 'flag' 'language' 'population' 'timezones'
-#for info in data:
-    #area = info['area']
-    #borders = info['borders']
-    #capital = info['capital']
-    #continents = info['continents']
-   # currencies = info['currencies']
-    #flag = info['flag']
-   # language = info['languages']
-  #  population = info['population']
- #   timezones = info['timezones']
-#print(f'Information about {country} \narea:{area} \nborders: {borders} \ncapital: {capital} \ncontinents: {continents} \ncurrencies: {currencies} \nflag: {flag} \nlanguages: {language} \npopulation: {population} \ntimezones: {timezones}')
+#Brief Summary of the project: Project 1 help user get more information about their choice country.Poject 2 gives user real time currency conversion rate in comparison to USD
+from pip._vendor import requests
+from pprint import pprint as pp
+#Type in the country of your choice to get detailed information about the country
+country = input("What country would you like to visit?: ")
+endpoint1 = 'https://restcountries.com/v3.1/name/' + country + '?fullText=true' # the api link 
+print(endpoint1)
+response = requests.get(endpoint1)  # making a call to the api
+print(response.status_code)  # check to ensure the api call is successful
+data = response.json() #response in json file
+pp(data)
+#display country information 'area', 'borders', 'capital' 'continents' 'currencies' 'flag' 'language' 'population' 'timezones'
+for info in data:
+    area = info['area']
+    borders = info['borders']
+    capital = info['capital']
+    continents = info['continents']
+    currencies = info['currencies']
+    flag = info['flag']
+    language = info['languages']
+    population = info['population']
+    timezones = info['timezones']
+print(f'Information about {country} \narea:{area} \nborders: {borders} \ncapital: {capital} \ncontinents: {continents} \ncurrencies: {currencies} \nflag: {flag} \nlanguages: {language} \npopulation: {population} \ntimezones: {timezones}')
 
 #Project 2
-#type in your budget in usd
-
 from pip._vendor import requests
 from pprint import pprint as pp 
 
 api_key = 'd6463bde9e2ea9ae97de9ad2'
 
-endpoint1 = 'https://v6.exchangerate-api.com/v6/d6463bde9e2ea9ae97de9ad2/latest/USD' 
+endpoint1 = 'https://v6.exchangerate-api.com/v6/d6463bde9e2ea9ae97de9ad2/latest/USD' #the api link
 
 response = requests.get(endpoint1)  # making a call to the api
 
 print(response.status_code)  # check to ensure the api call is successful
-data = response.json()
-budget = float(input("What is your budget in USD?: "))
-#pp(data)
-currency = input("Enter the currency you want to use: ")
-converted_budget = budget * data['conversion_rates'][currency]
+data = response.json() #response in json file
+budget = float(input("What is your budget in USD?: ")) #USD is the base currency 
+currency = input("Enter the currency code: ") #Enter the currency code e.g "Naira = NGN, Ghana = GHS, Dollars = USD"
+converted_budget = budget * data['conversion_rates'][currency] 
+print(currency, converted_budget)  
 print(f"You wish to visit {country} for holiday. Your budget is ${budget} which is {currency}{converted_budget} when converted to your desired currency. Enjoy your holidays.")
 
