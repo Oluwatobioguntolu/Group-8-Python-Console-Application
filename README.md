@@ -66,20 +66,22 @@ Group-8-Python-Console-Application.py
 
 ## Team members and Contributions
 
-- Team Lead: Oluwatobi Oguntolu
+# Team Lead:
 
-- Team Members:
+- Oluwatobi Oguntolu
+
+# Team Members:
 
  - Khadijat Agboola - Contributed to the code, scenario and repository
 
  - Temitope Olatidoye - Updated the README
 
  - Elizabeth Soetan  - Commenting on the code
- - 
+   
  - Oumaima Nakrimi
- - 
+   
  - Ifunanya Nicholas
- - 
+   
  - Maureen Nwobodo
 
 Feel free to reach out to the team lead or any team member for questions or clarifications. Happy holiday planning!
