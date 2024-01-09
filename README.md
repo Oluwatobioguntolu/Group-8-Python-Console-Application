@@ -47,9 +47,9 @@ Group-8-Python-Console-Application.py
 
 ## APIs Used
 
-1. **Country Details API**: ['https://restcountries.com/v3.1/name/' + country + '?fullText=true'] ## For more info, check: https://restcountries.com/
+1. **Country Details API**: ['https://restcountries.com/v3.1/name/' + country + '?fullText=true']   For more info, check: https://restcountries.com/
 
-2. **Exchange Rate API**: ['https://v6.exchangerate-api.com/v6/d6463bde9e2ea9ae97de9ad2/latest/USD'] ## For more info, check: https://www.exchangerate-api.com/
+2. **Exchange Rate API**: ['https://v6.exchangerate-api.com/v6/d6463bde9e2ea9ae97de9ad2/latest/USD']  For more info, check: https://www.exchangerate-api.com/
 
 
 
