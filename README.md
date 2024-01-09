@@ -76,7 +76,7 @@ Group-8-Python-Console-Application.py
 
  - Temitope Olatidoye - Updated the README
 
- - Elizabeth Soetan  - Commenting on the code
+- Elizabeth Soetan(archkitted)  - Commenting on the code
    
  - Oumaima Nakrimi
    
