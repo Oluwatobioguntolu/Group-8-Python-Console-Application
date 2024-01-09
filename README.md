@@ -68,7 +68,7 @@ Group-8-Python-Console-Application.py
 
 # Team Lead:
 
-- Oluwatobi Oguntolu
+- Oluwatobi Oguntolu - Sourced the two API keys used, wrote the codes needed to generate data from the APIs
 
 # Team Members:
 
