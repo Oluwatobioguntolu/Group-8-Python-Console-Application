@@ -80,9 +80,9 @@ Group-8-Python-Console-Application.py
    
  - Oumaima Nakrimi
    
- - Ifunanya Nicholas
+ - Ifunanya Nicholas - Modified code such that it extracts the current currency abbreviation of your budget amount and converts to the currency of the country you wish to visit
    
- - Maureen Nwobodo
+ - Maureen Nwobodo - contributed to the sourcing of the APIs and commented on the code
 
 Feel free to reach out to the team lead or any team member for questions or clarifications. Happy holiday planning!
 In this project, we are using two APIs to build a python application. The first API returns data about information of selected countries. The second API generates the current exchange rate of the s...
